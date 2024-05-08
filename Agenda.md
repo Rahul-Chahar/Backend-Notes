@@ -16,4 +16,31 @@
 -> To build a backend
 
 ## What is HTTP?
-->
+-> Hypertext transfer protocol
+
+-> Protocol to transfer data over the network
+
+
+## Why do we need DB?
+-> Store, manage & fetch data multiple times by multiple users at a single point of time.
+
+## Why MongoDB?
+-> Easy to understand
+
+-> Flexible Schema
+
+-> Fast Retivale
+
+-> Scalabe
+
+-> Support large file
+
+
+## REST APIs
+-> API ==> Application Programming Interface
+
+-> REST ==> Rest is a type of API
+*Representaional State Transfer*
+
+ye REST API light weight houta isliye ye fast bhi houta hai
+
