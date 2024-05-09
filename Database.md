@@ -69,10 +69,18 @@ types->
 
 -> DBMS classification (Relational & Non-Relational)
 
-Relational                                            Non-Relational
+Relational                                            
 
-eg.                                                   eg.
-* MySQL                                               * MongoDB
-* PostgreSQL                                          * Cassandra
-* Microsoft SQL Server                                * Redis
-                                                      * Neo4j
+eg.                                                   
+* MySQL                                              
+* PostgreSQL                                          
+* Microsoft SQL Server                                
+
+
+Non-Relational
+
+eg.
+* MongoDB
+* Cassandra
+* Redis
+* Neo4j
