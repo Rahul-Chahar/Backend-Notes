@@ -44,3 +44,14 @@
 * To install YARN, npm needs to be installed
 * YARN generates a yarn.lock file
 
+# MODULES, DEPENDENCIES AND PACKAGES
+*Terms commonly used in Node.js:*
+
+### Modules
+are single or multiple files that contain code for a single concept, functionality or library
+
+### Dependencies 
+are requirements that you need to use an API or a function that is part of an internal module then for that you need that module as a dependency
+
+### Packages
+are single modules or collections of multiple modules
