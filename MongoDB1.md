@@ -89,9 +89,16 @@ Why BSON?
 
 ### Challenges
 * 1-> Query could be slower
-* 2-> Transaction become complex 
+* 2-> Transaction becomes complex 
 
 
 **Summary**
 
 MongoDB -> DBMS -> NoSQL
+
+
+### What is MongoDB?
+MongoDB is an open-source, document-oriented NoSQL database management system.
+
+
+*10gen company ne mongoDB koh banaya tha later on 10gen ka naam mongoDB hi hougya or phela version mongoDB ka 2012 mein aaya tha*
