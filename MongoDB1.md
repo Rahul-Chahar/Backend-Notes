@@ -172,3 +172,21 @@ eg->> db.data.findOne({'name':'vinod'})
 
 *Note--> Here, --jsonArray accepts the import of data expressed with multiple many documents withing a single JSON array.*
 
+
+[MongoDB Notes.pdf](https://github.com/Rahul-Chahar/Backend-Notes/files/15362852/MongoDB.Notes.pdf)
+
+
+## Update Operations in MongoDB
+* updateOne() and updateMany()
+* Removing and renaming fields
+* Adding, and removing items from an array
+* Updating embedded documents
+
+
+### updateOne() and updateMany()
+* updateOne()
+db.collectionName.updateOne({filter},{$set:{existingField: newValue,newField:"new value",//...},});
+
+* updateMany()
+db.collectionName.updateMany{{filter},{$set:{existingField:newValue,//..},});
+
