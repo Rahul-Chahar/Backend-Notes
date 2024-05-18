@@ -102,3 +102,65 @@ MongoDB is an open-source, document-oriented NoSQL database management system.
 
 
 *10gen company ne mongoDB koh banaya tha later on 10gen ka naam mongoDB hi hougya or phela version mongoDB ka 2012 mein aaya tha*
+
+
+
+
+### Commands
+* mongosh   ---> server start
+* show dbs
+
+
+***Note->> You won't see a database listed in the output of the show dbs command until that database contains at least one collection with data in it.***
+
+
+#### Create database
+* use students  (use (name))
+* db.createCollection('data')
+
+#### delete
+db.data.drop()
+db.dropDatabase()
+
+
+### Inserting Documents in MongoDB
+* db.data.insertOne({'name':'rahul',age:29})
+* db.data.insertMany([{'name':vinod',age:29},{'name':'binamra',age:30},{'name':'arjun',age:30}])
+* db.data.find()
+
+#### Ordered and Unordered Inserts
+* Ordered Inserts
+The default behavior is ordered, where MongoDB stops on the first error.
+
+isme jha bhi error ajeyga ouske baad se kuch bhi add nahi krega error se phele ka krega bss
+
+eg-> db.<collection-name>.insertMany([doc1, doc2,...]);
+
+* Unordered Inserts
+When executing bulk write operations with an unordered flag, MongoDB processes after encountering an error.
+
+
+isem error se phele or bhaad ka sab add kar lega 
+eg-> db.<collection-name>.insertMany([doc1,doc2,...],{ordered:false});
+
+
+
+### Read Operations in MongoDB
+**Reading Documents in MongoDB**
+* Comparison Operators
+* Logical Operators
+* Cursors in MongoDB
+* Elements Operators
+
+### Finding Documents in MongoDB
+**find()**
+* db.collection_name.find({key:value})
+
+eg ->> db.data.find({'name':'vindo'})
+
+**findOne()**
+* db.collection_name.findOne({key:value})
+
+eg->> db.data.findOne({'name':'vinod'})
+
+
