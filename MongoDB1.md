@@ -157,7 +157,7 @@ eg-> db.<collection-name>.insertMany([doc1,doc2,...],{ordered:false});
 **find()**
 * db.collection_name.find({key:value})
 
-eg ->> db.data.find({'name':'vindo'})
+eg ->> db.data.find({'name':'vinod'})
 
 **findOne()**
 * db.collection_name.findOne({key:value})
@@ -168,7 +168,7 @@ eg->> db.data.findOne({'name':'vinod'})
 # Importing JSON in MongoDB
 * mongoimport jsonfile.json -d database_name -c collection_name
 * mongoimport products.json -d shop -c products
-* mongoimport products.json -d shop -c products --jsonArray
+* mongoimport products.json -d shop -c products --jsonArray     (--jsonArray ye tab use karna hai jab json mein array hou)
 
 *Note--> Here, --jsonArray accepts the import of data expressed with multiple many documents withing a single JSON array.*
 
