@@ -185,8 +185,41 @@ eg->> db.data.findOne({'name':'vinod'})
 
 ### updateOne() and updateMany()
 * updateOne()
+
 db.collectionName.updateOne({filter},{$set:{existingField: newValue,newField:"new value",//...},});
 
 * updateMany()
+
 db.collectionName.updateMany{{filter},{$set:{existingField:newValue,//..},});
 
+
+## Removing and Renaming Fields
+db.collectionName.updateOne({filter},{$unset:{fieldName:1}});
+
+db.collectionName.updateOne{{filter},{$rename:{oldFieldName:"newFieldName"}});
+
+
+
+# Aggregation
+* Aggregation is performing transformations on documents and combining them to produce computed results.
+* Pipeline Stages: Aggregations consist of multiple pipeline stages, each performing a specific operation on the input data.
+
+### $match
+* The $match stage is similar to the query used as the first argument n find(). It filters documents based on specified conditions.
+* Syntax   -->>   {$match:{<query>}}
+* Example ----->> db.products.aggregate([{$match:{company:"64c2333.."}}]);
+
+### $group
+* ye bilkul javascript ke accumulator ki trha hai
+* The $group stage groups documents by specified fields and performs aggregate operations on grouped data.
+```
+{
+$group:
+{
+_id:<expression>,//Group key
+<field1>:{<accumulator1>:<expression>},
+..
+}
+}
+```
+db.products.aggregate([{ $group: {_id: "$company", totalProducts: {$sum: 1} } } ]);
