@@ -141,6 +141,7 @@ When executing bulk write operations with an unordered flag, MongoDB processes a
 
 
 isem error se phele or bhaad ka sab add kar lega 
+
 eg-> db.<collection-name>.insertMany([doc1,doc2,...],{ordered:false});
 
 
@@ -163,4 +164,11 @@ eg ->> db.data.find({'name':'vindo'})
 
 eg->> db.data.findOne({'name':'vinod'})
 
+
+# Importing JSON in MongoDB
+* mongoimport jsonfile.json -d database_name -c collection_name
+* mongoimport products.json -d shop -c products
+* mongoimport products.json -d shop -c products --jsonArray
+
+*Note--> Here, --jsonArray accepts the import of data expressed with multiple many documents withing a single JSON array.*
 
