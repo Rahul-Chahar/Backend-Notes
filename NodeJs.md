@@ -55,3 +55,25 @@ are requirements that you need to use an API or a function that is part of an in
 
 ### Packages
 are single modules or collections of multiple modules
+
+
+
+### Server
+***Never Stopping process***
+```
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    if(req.url == '/hello'){
+        res.end('Hello World ! Welcome to the world of Node.js')
+    } else{
+        res.writeHead(404);
+        res.end('Use the right URL')
+    }
+    })
+
+    server.listen(3000,() => {
+        console.log('Server is running on port 3000')
+    })
+
+```
