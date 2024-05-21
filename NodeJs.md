@@ -50,6 +50,13 @@
 ### Modules
 are single or multiple files that contain code for a single concept, functionality or library
 
+There are 3 types of Module
+
+* Custom Module
+* default Module
+* External Module
+
+
 ### Dependencies 
 are requirements that you need to use an API or a function that is part of an internal module then for that you need that module as a dependency
 
