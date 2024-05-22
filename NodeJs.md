@@ -119,3 +119,19 @@ require('')  keyword ka use karte hai
 * PATH
 * OS
 
+
+### Interview imp question
+# How to make a server without using express 
+Ans -> Using http module 
+
+eg->
+```
+var http = require('http');
+
+http.createServer(function(req, res){
+res.writeHead(200,{"Content-type":'text/html'});
+res.write("Hello World");
+}).listen(5001,()=>{
+console.log("Listening to port 5001")
+})
+```
