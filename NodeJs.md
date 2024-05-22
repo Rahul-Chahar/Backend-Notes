@@ -84,3 +84,21 @@ const server = http.createServer((req, res) => {
     })
 
 ```
+
+
+# Event Loop Compoenets
+call stack
+
+Libuv 
+* Macro Task Queue
+  * -> Time Queue
+  * -> I/O Queue
+* Micro Task Queue
+  * -> promise Queue
+  * -> process.nextTick
+ 
+***Micro Task Queue sabse phele execute houga ouske baad Macro Task Queue execute houga.***
+
+
+
+
