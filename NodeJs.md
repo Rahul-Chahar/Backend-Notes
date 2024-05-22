@@ -135,3 +135,10 @@ res.write("Hello World");
 console.log("Listening to port 5001")
 })
 ```
+
+
+#### Status code
+* 200 -- OK
+* 201 -- created
+* 4xx -- client end se problem
+* 5xx -- server end se problem
