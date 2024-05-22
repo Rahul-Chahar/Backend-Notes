@@ -101,4 +101,21 @@ Libuv
 
 
 
+# Modules 
+Modules ek chhota function hai, ham ise import or export karte hai 
+
+-> Module koh **export** karne ke liye
+
+module.exports
+
+-> Module koh **import** karne ke liye
+
+require('')  keyword ka use karte hai
+
+
+-> Modules example
+* HTTP
+* FS
+* PATH
+* OS
 
