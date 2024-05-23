@@ -22,7 +22,7 @@
 
 
 ## Why do we need DB?
--> Store, manage & fetch data multiple times by multiple users at a single point of time.
+-> Store, manage & fetch data multiple times by multiple users at a single time.
 
 ## Why MongoDB?
 -> Easy to understand
@@ -42,5 +42,5 @@
 -> REST ==> Rest is a type of API
 *Representaional State Transfer*
 
-ye REST API light weight houta isliye ye fast bhi houta hai
+ye REST API light weight houta isliye ye fast bhi houta hai 
 
