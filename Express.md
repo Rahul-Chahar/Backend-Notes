@@ -45,3 +45,18 @@ netstat -ano|findstr "LISTENING"
 * Mac/Linux
 
 sudo lsof -i -P -n | grep LISTEN
+
+
+
+### Request Vocab
+* GET
+  * Request Resources to a server
+* PPST
+  * Sending Resources to a server 
+* PUT
+  * Replace Resource
+* PATCH
+  * Patch up a Resource
+* DELETE
+  * Delete Resource 
+
